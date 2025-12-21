@@ -76,7 +76,7 @@ header nav a.btn {
 /* ================= LOGO HERO ================= */
 .hero-logo {
   width: 260px;
-  transform: translateY(-50%);
+  transform: translateY(-20%);
   margin-bottom: 30px;
 }
 
