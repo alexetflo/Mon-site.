@@ -1,166 +1,217 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-  <meta charset="UTF-8">
+/* ================= RESET GLOBAL ================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
 
-  <title>PS Extérieur & Électricité | Terrassement, Électricité & Aménagement extérieur</title>
+html, body {
+  width: 100%;
+  height: 100%;
+}
 
-  <meta name="description" content="Entreprise spécialisée en petit terrassement, électricité et aménagement extérieur. Devis gratuit et travail soigné.">
-  <meta name="keywords" content="terrassement, électricité, aménagement extérieur, travaux extérieurs ">
-  <meta name="author" content="PS Extérieur & Électricité">
+body {
+  background: #ffffff;
+  color: #111;
+  line-height: 1.6;
+}
 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+/* ================= HEADER ================= */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  background: rgba(255,255,255,0.95);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 40px;
+  z-index: 1000;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
 
-  <!-- SEO réseaux sociaux -->
-  <meta property="og:title" content="PS Extérieur & Électricité">
-  <meta property="og:description" content="Terrassement, électricité et aménagement extérieur – devis gratuit.">
-  <meta property="og:type" content="website">
+header .logo {
+  height: 55px;
+}
 
-  <link rel="stylesheet" href="style.css">
-</head>
+header nav a {
+  margin-left: 25px;
+  text-decoration: none;
+  color: #222;
+  font-weight: 600;
+}
 
-<body>
+header nav a.btn {
+  background: #f2b705;
+  color: #000;
+  padding: 10px 16px;
+  border-radius: 6px;
+}
 
-<!-- ================= HEADER ================= -->
-<header>
-  <img src="images/logo.png" alt="PS Extérieur & Électricité" class="logo">
+/* ================= HERO ================= */
+.hero {
+  position: relative;
+  width: 100%;
+  height: 100vh;
 
-  <nav>
-    <a href="#accueil">Accueil</a>
-    <a href="#services">Services</a>
-    <a href="#realisations">Travaux réalisés</a>
-    <a href="#devis" class="btn">Devis</a>
-    <a href="#contact">Contact</a>
-  </nav>
-</header>
+  background: url("images/hero.jpg") center top no-repeat;
+  background-size: cover;
 
-<!-- ================= HERO / ACCUEIL ================= -->
-<section class="hero" id="accueil">
-  <div class="hero-content">
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-    <img src="images/logo.png"
-         alt="PS Extérieur & Électricité"
-         class="hero-logo">
+  padding-top: 80px; /* espace header */
+  
+  /* léger boost naturel */
+  filter: brightness(1.05) contrast(1.05);
+}
 
-    <h1>Terrassement, Électricité & Aménagement extérieur</h1>
+/* transition propre vers le blanc */
+.hero::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 120px;
+  background: linear-gradient(to bottom, rgba(255,255,255,0), #ffffff);
+}
 
-    <p>
-      Entreprise spécialisée en terrassement, électricité et aménagement extérieur.<br>
-      Devis gratuit – Travail soigné.
-    </p>
+/* ================= CONTENU HERO ================= */
+.hero-content {
+  text-align: center;
+  max-width: 900px;
+  padding: 20px;
+  z-index: 2;
+}
 
-    <a href="#devis" class="btn">Demander un devis</a>
+/* ================= LOGO HERO ================= */
+.hero-logo {
+  width: 260px;
+  margin-bottom: 25px;
+}
 
-  </div>
-</section>
+/* ================= TEXTE HERO ================= */
+.hero h1 {
+  color: #ffffff;
+  font-size: 3rem;
+  margin-bottom: 15px;
+  text-shadow: 0 3px 10px rgba(0,0,0,0.6);
+}
 
-<!-- ================= INTRO ================= -->
-<section class="intro">
-  <h2>Entreprise professionnelle et indépendante</h2>
-  <p>
-    PS Extérieur & Électricité vous accompagne dans vos projets extérieurs
-    avec sérieux, efficacité et savoir-faire.
-  </p>
-</section>
+.hero p {
+  color: #ffffff;
+  font-size: 1.2rem;
+  margin-bottom: 25px;
+  text-shadow: 0 2px 6px rgba(0,0,0,0.6);
+}
 
-<!-- ================= SERVICES ================= -->
-<section id="services">
-  <h1>Nos services</h1>
+.hero .btn {
+  background: #f2b705;
+  color: #000;
+  padding: 14px 24px;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+}
 
-  <div class="card">
-    <h2>Terrassement</h2>
-    <p>
-      Préparation de terrain, nivellement, tranchées et bases de construction
-      pour tous types de projets.
-    </p>
-  </div>
+/* ================= SECTIONS ================= */
+section {
+  padding: 120px 15% 80px;
+  background: #ffffff;
+}
 
-  <div class="card">
-    <h2>Électricité</h2>
-    <p>
-      Installations électriques, rénovations, mises en conformité
-      et éclairage intérieur et extérieur.
-    </p>
-  </div>
+section h1,
+section h2 {
+  font-size: 2.2rem;
+  margin-bottom: 25px;
+  text-align: center;
+}
 
-  <div class="card">
-    <h2>Aménagement extérieur</h2>
-    <p>
-      Allées, terrasses, clôtures et finitions extérieures
-      pour valoriser votre habitation.
-    </p>
-  </div>
-</section>
+/* ================= CARDS ================= */
+.card {
+  background: #f8f8f8;
+  padding: 30px;
+  margin-bottom: 25px;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
 
-<!-- ================= REALISATIONS ================= -->
-<section id="realisations">
-  <h1>Travaux réalisés</h1>
+/* ================= GALERIE ================= */
+.galerie {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+}
 
-  <p class="section-intro">
-    Quelques exemples de nos réalisations.<br>
-    D’autres photos seront ajoutées régulièrement.
-  </p>
+.galerie img {
+  width: 100%;
+  border-radius: 10px;
+  display: block;
+}
 
-  <div class="galerie">
-    <img src="images/travaux/photo1.jpg" alt="Travaux de terrassement">
-    <img src="images/travaux/photo2.jpg" alt="Travaux d’électricité">
-    <img src="images/travaux/photo3.jpg" alt="Aménagement extérieur">
-  </div>
-</section>
+/* ================= FORMULAIRE ================= */
+form {
+  max-width: 600px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
 
-<!-- ================= DEVIS ================= -->
-<section id="devis">
-  <h1>Demande de devis</h1>
+form input,
+form textarea {
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
 
-  <p>
-    Décrivez votre projet et ajoutez des photos si nécessaire.
-    Nous vous répondrons rapidement.
-  </p>
+form button {
+  background: #f2b705;
+  border: none;
+  padding: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 6px;
+}
 
-  <form
-    action="https://formspree.io/f/mjgbojrz"
-    method="POST"
-    enctype="multipart/form-data"
-  >
+/* ================= CONTACT ================= */
+#contact {
+  text-align: center;
+}
 
-    <input type="text" name="Nom" placeholder="Votre nom" required>
+/* ================= FOOTER ================= */
+footer {
+  background: #111;
+  color: #fff;
+  text-align: center;
+  padding: 25px;
+}
 
-    <input type="email" name="Email" placeholder="Votre email" required>
+/* ================= RESPONSIVE ================= */
+@media (max-width: 768px) {
 
-    <input type="tel" name="Téléphone" placeholder="Votre téléphone">
+  header {
+    padding: 0 20px;
+  }
 
-    <textarea
-      name="Projet"
-      rows="5"
-      placeholder="Décrivez votre projet"
-      required
-    ></textarea>
+  header nav a {
+    margin-left: 15px;
+  }
 
-    <input type="file" name="Fichiers" multiple>
+  .hero h1 {
+    font-size: 2.2rem;
+  }
 
-    <input type="hidden" name="_subject" value="Nouvelle demande de devis">
-    <input type="hidden" name="_redirect" value="merci.html">
+  .hero-logo {
+    width: 200px;
+  }
 
-    <button type="submit" class="btn">Envoyer la demande</button>
-
-  </form>
-</section>
-
-<!-- ================= CONTACT ================= -->
-<section id="contact">
-  <h1>Contact</h1>
-
-  <p>
-    Entreprise de terrassement, électricité et aménagement extérieur.<br><br>
-    📞 0471 85 60 20<br>
-    📧 contactps.exte@gmail.com
-  </p>
-</section>
-
-<!-- ================= FOOTER ================= -->
-<footer>
-  <p>© PS Extérieur & Électricité</p>
-</footer>
-
-</body>
-</html>
+  section {
+    padding: 100px 10% 70px;
+  }
+}
