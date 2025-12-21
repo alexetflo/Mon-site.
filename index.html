@@ -20,7 +20,6 @@
   </nav>
 </header>
 
-<!-- ACCUEIL -->
 <section class="hero" id="accueil">
   <h1>Du sol à la structure</h1>
   <p>Terrassement • Électricité • Aménagement extérieur</p>
@@ -35,56 +34,61 @@
   </p>
 </section>
 
-<!-- SERVICES -->
 <section id="services">
   <h1>Nos services</h1>
 
-  <h2>Terrassement</h2>
-  <p>
-    Préparation de terrain, nivellement et tranchées
-    pour vos projets de construction et d’aménagement extérieur.
-  </p>
+  <div class="card">
+    <h2>Terrassement</h2>
+    <p>Préparation de terrain, nivellement, tranchées.</p>
+  </div>
 
-  <h2>Électricité</h2>
-  <p>
-    Installations électriques, rénovations, mises en conformité
-    et éclairage intérieur et extérieur.
-  </p>
+  <div class="card">
+    <h2>Électricité</h2>
+    <p>Installations, rénovations, mises en conformité.</p>
+  </div>
 
-  <h2>Aménagement extérieur</h2>
-  <p>
-    Création d’allées, terrasses et aménagements
-    pour valoriser vos extérieurs.
-  </p>
+  <div class="card">
+    <h2>Aménagement extérieur</h2>
+    <p>Allées, terrasses, finitions extérieures.</p>
+  </div>
 </section>
 
-<!-- TRAVAUX REALISES -->
 <section id="realisations">
   <h1>Travaux réalisés</h1>
-  <p>
-    Découvrez prochainement nos réalisations.
-    Des photos de chantiers seront ajoutées ici.
-  </p>
+  <p>Photos de chantiers à venir.</p>
 </section>
 
-<!-- DEVIS -->
 <section id="devis">
   <h1>Demande de devis</h1>
+  <p>Envoyez-nous votre projet et ajoutez des photos si nécessaire.</p>
 
-  <p>Décrivez-nous votre projet, nous vous répondrons rapidement.</p>
+  <form
+    action="https://formspree.io/f/xxxxabcd"
+    method="POST"
+    enctype="multipart/form-data"
+  >
 
-  <form>
-    <input type="text" placeholder="Votre nom" required><br><br>
-    <input type="email" placeholder="Votre email" required><br><br>
-    <textarea placeholder="Votre projet" rows="5" required></textarea><br><br>
+    <input type="text" name="Nom" placeholder="Votre nom" required>
+
+    <input type="email" name="Email" placeholder="Votre email" required>
+
+    <input type="tel" name="Téléphone" placeholder="Votre téléphone">
+
+    <textarea name="Projet" placeholder="Décrivez votre projet" rows="5" required></textarea>
+
+    <input type="file" name="Fichiers" multiple>
+
+    <input type="hidden" name="_subject" value="Nouvelle demande de devis">
+
+    <input type="hidden" name="_redirect" value="merci.html">
+
     <button type="submit" class="btn">Envoyer la demande</button>
+
   </form>
 </section>
 
-<!-- CONTACT -->
 <section id="contact">
   <h1>Contact</h1>
-
   <p>
     📞 0471 85 60 20<br>
     📧 contactps.exte@gmail.com
