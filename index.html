@@ -2,7 +2,19 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <title>PS Extérieur & Électricité</title>
+
+  <title>PS Extérieur & Électricité | Terrassement, Électricité & Aménagement extérieur</title>
+
+  <meta name="description" content="Entreprise spécialisée en terrassement, électricité et aménagement extérieur. Devis gratuit et intervention professionnelle.">
+  <meta name="keywords" content="terrassement, électricité, aménagement extérieur, travaux extérieurs, devis terrassement">
+  <meta name="author" content="PS Extérieur & Électricité">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta property="og:title" content="PS Extérieur & Électricité">
+  <meta property="og:description" content="Terrassement, électricité et aménagement extérieur – devis gratuit.">
+  <meta property="og:type" content="website">
+
   <link rel="stylesheet" href="style.css">
 </head>
 
@@ -20,76 +32,90 @@
   </nav>
 </header>
 
+<!-- ACCUEIL -->
 <section class="hero" id="accueil">
-  <h1>Du sol à la structure</h1>
-  <p>Terrassement • Électricité • Aménagement extérieur</p>
+  <h1>Terrassement, Électricité & Aménagement extérieur</h1>
+  <p>
+    Entreprise spécialisée en terrassement, électricité et aménagement extérieur.<br>
+    Devis gratuit – Travail soigné.
+  </p>
   <a href="#devis" class="btn">Demander un devis</a>
 </section>
 
 <section class="intro">
   <h2>Entreprise professionnelle et indépendante</h2>
   <p>
-    PS Extérieur & Électricité vous accompagne dans vos projets
-    avec sérieux, savoir-faire et efficacité.
+    PS Extérieur & Électricité vous accompagne dans vos projets extérieurs
+    avec sérieux, efficacité et savoir-faire.
   </p>
 </section>
 
+<!-- SERVICES -->
 <section id="services">
   <h1>Nos services</h1>
 
   <div class="card">
     <h2>Terrassement</h2>
-    <p>Préparation de terrain, nivellement, tranchées.</p>
+    <p>Préparation de terrain, nivellement, tranchées et bases de construction.</p>
   </div>
 
   <div class="card">
     <h2>Électricité</h2>
-    <p>Installations, rénovations, mises en conformité.</p>
+    <p>Installations électriques, rénovations, mises en conformité et éclairage.</p>
   </div>
 
   <div class="card">
     <h2>Aménagement extérieur</h2>
-    <p>Allées, terrasses, finitions extérieures.</p>
+    <p>Allées, terrasses, clôtures et finitions extérieures.</p>
   </div>
 </section>
 
+<!-- REALISATIONS -->
 <section id="realisations">
   <h1>Travaux réalisés</h1>
-  <p>Photos de chantiers à venir.</p>
+
+  <p class="section-intro">
+    Découvrez quelques exemples de nos réalisations.<br>
+    D’autres photos seront ajoutées régulièrement.
+  </p>
+
+  <div class="galerie">
+    <img src="images/travaux/photo1.jpg" alt="Travaux de terrassement">
+    <img src="images/travaux/photo2.jpg" alt="Travaux d’électricité">
+    <img src="images/travaux/photo3.jpg" alt="Aménagement extérieur">
+  </div>
 </section>
 
+<!-- DEVIS -->
 <section id="devis">
   <h1>Demande de devis</h1>
-  <p>Envoyez-nous votre projet et ajoutez des photos si nécessaire.</p>
+  <p>Expliquez-nous votre projet et ajoutez des photos si nécessaire.</p>
 
   <form
-    action="https://formspree.io/f/xxxxabcd"
+    action="https://formspree.io/f/mjgbojrz"
     method="POST"
     enctype="multipart/form-data"
   >
-
     <input type="text" name="Nom" placeholder="Votre nom" required>
-
     <input type="email" name="Email" placeholder="Votre email" required>
-
     <input type="tel" name="Téléphone" placeholder="Votre téléphone">
 
-    <textarea name="Projet" placeholder="Décrivez votre projet" rows="5" required></textarea>
+    <textarea name="Projet" rows="5" placeholder="Décrivez votre projet" required></textarea>
 
     <input type="file" name="Fichiers" multiple>
 
     <input type="hidden" name="_subject" value="Nouvelle demande de devis">
-
     <input type="hidden" name="_redirect" value="merci.html">
 
     <button type="submit" class="btn">Envoyer la demande</button>
-
   </form>
 </section>
 
+<!-- CONTACT -->
 <section id="contact">
   <h1>Contact</h1>
   <p>
+    Entreprise de terrassement, électricité et aménagement extérieur.<br><br>
     📞 0471 85 60 20<br>
     📧 contactps.exte@gmail.com
   </p>
