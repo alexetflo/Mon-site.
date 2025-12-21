@@ -5,32 +5,44 @@
   <title>PS Extérieur & Électricité</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  
+
 <header>
   <img src="images/logo.png" alt="PS Extérieur & Électricité" class="logo">
+
   <nav>
-    <a href="index.html">Accueil</a>
-    <a href="services.html">Services</a>
-    <a href="realisations.html">Travaux réalisés</a>
-    <a href="devis.html" class="btn">Devis</a>
-    <a href="contact.html">Contact</a>
+    <a href="#accueil">Accueil</a>
+    <a href="#services">Services</a>
+    <a href="#realisations">Travaux réalisés</a>
+    <a href="#devis" class="btn">Devis</a>
+    <a href="#contact">Contact</a>
   </nav>
 </header>
 
-<section class="hero">
+<!-- ACCUEIL -->
+<section class="hero" id="accueil">
   <h1>Du sol à la structure</h1>
   <p>Terrassement • Électricité • Aménagement extérieur</p>
-  <a href="devis.html" class="btn">Demander un devis</a>
+  <a href="#devis" class="btn">Demander un devis</a>
 </section>
-  
-  <section id="services">
+
+<section class="intro">
+  <h2>Entreprise professionnelle et indépendante</h2>
+  <p>
+    PS Extérieur & Électricité vous accompagne dans vos projets
+    avec sérieux, savoir-faire et efficacité.
+  </p>
+</section>
+
+<!-- SERVICES -->
+<section id="services">
   <h1>Nos services</h1>
 
   <h2>Terrassement</h2>
   <p>
-    Préparation de terrain, nivellement, tranchées et travaux de base
-    pour tous vos projets extérieurs.
+    Préparation de terrain, nivellement et tranchées
+    pour vos projets de construction et d’aménagement extérieur.
   </p>
 
   <h2>Électricité</h2>
@@ -41,17 +53,41 @@
 
   <h2>Aménagement extérieur</h2>
   <p>
-    Création d’allées, terrasses, clôtures et aménagements
+    Création d’allées, terrasses et aménagements
     pour valoriser vos extérieurs.
   </p>
 </section>
 
-
-<section class="intro">
-  <h2>Entreprise professionnelle et indépendante</h2>
+<!-- TRAVAUX REALISES -->
+<section id="realisations">
+  <h1>Travaux réalisés</h1>
   <p>
-    PS Extérieur & Électricité vous accompagne dans vos projets extérieurs
-    avec sérieux, savoir-faire et efficacité.
+    Découvrez prochainement nos réalisations.
+    Des photos de chantiers seront ajoutées ici.
+  </p>
+</section>
+
+<!-- DEVIS -->
+<section id="devis">
+  <h1>Demande de devis</h1>
+
+  <p>Décrivez-nous votre projet, nous vous répondrons rapidement.</p>
+
+  <form>
+    <input type="text" placeholder="Votre nom" required><br><br>
+    <input type="email" placeholder="Votre email" required><br><br>
+    <textarea placeholder="Votre projet" rows="5" required></textarea><br><br>
+    <button type="submit" class="btn">Envoyer la demande</button>
+  </form>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <h1>Contact</h1>
+
+  <p>
+    📞 0471 85 60 20<br>
+    📧 contactps.exte@gmail.com
   </p>
 </section>
 
