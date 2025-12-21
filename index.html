@@ -5,12 +5,13 @@
 
   <title>PS Extérieur & Électricité | Terrassement, Électricité & Aménagement extérieur</title>
 
-  <meta name="description" content="Entreprise spécialisée en terrassement, électricité et aménagement extérieur. Devis gratuit et intervention professionnelle.">
+  <meta name="description" content="Entreprise spécialisée en terrassement, électricité et aménagement extérieur. Devis gratuit et travail soigné.">
   <meta name="keywords" content="terrassement, électricité, aménagement extérieur, travaux extérieurs, devis terrassement">
   <meta name="author" content="PS Extérieur & Électricité">
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <!-- SEO réseaux sociaux -->
   <meta property="og:title" content="PS Extérieur & Électricité">
   <meta property="og:description" content="Terrassement, électricité et aménagement extérieur – devis gratuit.">
   <meta property="og:type" content="website">
@@ -20,6 +21,7 @@
 
 <body>
 
+<!-- ================= HEADER ================= -->
 <header>
   <img src="images/logo.png" alt="PS Extérieur & Électricité" class="logo">
 
@@ -32,16 +34,27 @@
   </nav>
 </header>
 
-<!-- ACCUEIL -->
+<!-- ================= HERO / ACCUEIL ================= -->
 <section class="hero" id="accueil">
-  <h1>Terrassement, Électricité & Aménagement extérieur</h1>
-  <p>
-    Entreprise spécialisée en terrassement, électricité et aménagement extérieur.<br>
-    Devis gratuit – Travail soigné.
-  </p>
-  <a href="#devis" class="btn">Demander un devis</a>
+  <div class="hero-content">
+
+    <img src="images/logo.png"
+         alt="PS Extérieur & Électricité"
+         class="hero-logo">
+
+    <h1>Terrassement, Électricité & Aménagement extérieur</h1>
+
+    <p>
+      Entreprise spécialisée en terrassement, électricité et aménagement extérieur.<br>
+      Devis gratuit – Travail soigné.
+    </p>
+
+    <a href="#devis" class="btn">Demander un devis</a>
+
+  </div>
 </section>
 
+<!-- ================= INTRO ================= -->
 <section class="intro">
   <h2>Entreprise professionnelle et indépendante</h2>
   <p>
@@ -50,32 +63,41 @@
   </p>
 </section>
 
-<!-- SERVICES -->
+<!-- ================= SERVICES ================= -->
 <section id="services">
   <h1>Nos services</h1>
 
   <div class="card">
     <h2>Terrassement</h2>
-    <p>Préparation de terrain, nivellement, tranchées et bases de construction.</p>
+    <p>
+      Préparation de terrain, nivellement, tranchées et bases de construction
+      pour tous types de projets.
+    </p>
   </div>
 
   <div class="card">
     <h2>Électricité</h2>
-    <p>Installations électriques, rénovations, mises en conformité et éclairage.</p>
+    <p>
+      Installations électriques, rénovations, mises en conformité
+      et éclairage intérieur et extérieur.
+    </p>
   </div>
 
   <div class="card">
     <h2>Aménagement extérieur</h2>
-    <p>Allées, terrasses, clôtures et finitions extérieures.</p>
+    <p>
+      Allées, terrasses, clôtures et finitions extérieures
+      pour valoriser votre habitation.
+    </p>
   </div>
 </section>
 
-<!-- REALISATIONS -->
+<!-- ================= REALISATIONS ================= -->
 <section id="realisations">
   <h1>Travaux réalisés</h1>
 
   <p class="section-intro">
-    Découvrez quelques exemples de nos réalisations.<br>
+    Quelques exemples de nos réalisations.<br>
     D’autres photos seront ajoutées régulièrement.
   </p>
 
@@ -86,21 +108,33 @@
   </div>
 </section>
 
-<!-- DEVIS -->
+<!-- ================= DEVIS ================= -->
 <section id="devis">
   <h1>Demande de devis</h1>
-  <p>Expliquez-nous votre projet et ajoutez des photos si nécessaire.</p>
+
+  <p>
+    Décrivez votre projet et ajoutez des photos si nécessaire.
+    Nous vous répondrons rapidement.
+  </p>
 
   <form
     action="https://formspree.io/f/mjgbojrz"
     method="POST"
     enctype="multipart/form-data"
   >
+
     <input type="text" name="Nom" placeholder="Votre nom" required>
+
     <input type="email" name="Email" placeholder="Votre email" required>
+
     <input type="tel" name="Téléphone" placeholder="Votre téléphone">
 
-    <textarea name="Projet" rows="5" placeholder="Décrivez votre projet" required></textarea>
+    <textarea
+      name="Projet"
+      rows="5"
+      placeholder="Décrivez votre projet"
+      required
+    ></textarea>
 
     <input type="file" name="Fichiers" multiple>
 
@@ -108,12 +142,14 @@
     <input type="hidden" name="_redirect" value="merci.html">
 
     <button type="submit" class="btn">Envoyer la demande</button>
+
   </form>
 </section>
 
-<!-- CONTACT -->
+<!-- ================= CONTACT ================= -->
 <section id="contact">
   <h1>Contact</h1>
+
   <p>
     Entreprise de terrassement, électricité et aménagement extérieur.<br><br>
     📞 0471 85 60 20<br>
@@ -121,6 +157,7 @@
   </p>
 </section>
 
+<!-- ================= FOOTER ================= -->
 <footer>
   <p>© PS Extérieur & Électricité</p>
 </footer>
