@@ -6,6 +6,11 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
 body {
   background: #ffffff;
   color: #111;
@@ -19,12 +24,13 @@ header {
   left: 0;
   width: 100%;
   height: 80px;
-  background: rgba(255, 255, 255, 0.95);
+  background: rgba(255,255,255,0.95);
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 0 40px;
   z-index: 1000;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
 }
 
 header .logo {
@@ -51,33 +57,42 @@ header nav a.btn {
   width: 100%;
   height: 100vh;
 
-  background:
-    linear-gradient(
-      to bottom,
-      #87ceeb 0%,
-      #87ceeb 30%,
-      rgba(0, 0, 0, 0.25) 55%,
-      rgba(0, 0, 0, 0.35) 75%,
-      #ffffff 100%
-    ),
-    url("images/hero.jpg") center 65% no-repeat;
-
+  background: url("images/hero.jpg") center top no-repeat;
   background-size: cover;
 
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
 
-  padding-top: 80px;
+  padding-top: 80px; /* espace header */
+  
+  /* léger boost naturel */
+  filter: brightness(1.05) contrast(1.05);
+}
+
+/* transition propre vers le blanc */
+.hero::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 120px;
+  background: linear-gradient(to bottom, rgba(255,255,255,0), #ffffff);
+}
+
+/* ================= CONTENU HERO ================= */
+.hero-content {
   text-align: center;
+  max-width: 900px;
+  padding: 20px;
+  z-index: 2;
 }
 
 /* ================= LOGO HERO ================= */
 .hero-logo {
   width: 260px;
-  transform: translateY(-20%);
-  margin-bottom: 30px;
+  margin-bottom: 25px;
 }
 
 /* ================= TEXTE HERO ================= */
@@ -85,12 +100,14 @@ header nav a.btn {
   color: #ffffff;
   font-size: 3rem;
   margin-bottom: 15px;
+  text-shadow: 0 3px 10px rgba(0,0,0,0.6);
 }
 
 .hero p {
-  color: #f1f1f1;
+  color: #ffffff;
   font-size: 1.2rem;
   margin-bottom: 25px;
+  text-shadow: 0 2px 6px rgba(0,0,0,0.6);
 }
 
 .hero .btn {
@@ -104,7 +121,7 @@ header nav a.btn {
 
 /* ================= SECTIONS ================= */
 section {
-  padding: 80px 15%;
+  padding: 120px 15% 80px;
   background: #ffffff;
 }
 
@@ -112,11 +129,6 @@ section h1,
 section h2 {
   font-size: 2.2rem;
   margin-bottom: 25px;
-  text-align: center;
-}
-
-/* ================= INTRO ================= */
-.intro {
   text-align: center;
 }
 
@@ -139,6 +151,7 @@ section h2 {
 .galerie img {
   width: 100%;
   border-radius: 10px;
+  display: block;
 }
 
 /* ================= FORMULAIRE ================= */
@@ -181,6 +194,7 @@ footer {
 
 /* ================= RESPONSIVE ================= */
 @media (max-width: 768px) {
+
   header {
     padding: 0 20px;
   }
@@ -195,10 +209,9 @@ footer {
 
   .hero-logo {
     width: 200px;
-    transform: translateY(-10%);
   }
 
   section {
-    padding: 60px 10%;
+    padding: 100px 10% 70px;
   }
 }
