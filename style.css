@@ -1,4 +1,4 @@
-/* ===================== RESET ===================== */
+/* RESET */
 * {
   margin: 0;
   padding: 0;
@@ -9,51 +9,49 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   background: #ffffff;
   color: #111;
-  line-height: 1.6;
 }
 
-/* ===================== HEADER ===================== */
+/* HEADER */
 header {
   position: fixed;
   top: 0;
-  left: 0;
   width: 100%;
   height: 80px;
-  background: #ffffff;
+  background: white;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 40px;
-  z-index: 1000;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  padding: 0 30px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  z-index: 10;
 }
 
-header .logo {
-  height: 55px;
+.logo {
+  height: 50px;
 }
 
-header nav a {
-  margin-left: 25px;
+nav a {
+  margin-left: 20px;
   text-decoration: none;
   color: #222;
-  font-weight: 600;
+  font-weight: bold;
 }
 
-header nav a.btn {
+nav .btn {
   background: #f2b705;
-  color: #000;
-  padding: 10px 16px;
-  border-radius: 6px;
+  padding: 8px 14px;
+  border-radius: 5px;
+  color: black;
 }
 
-/* ===================== HERO ===================== */
+/* HERO */
 .hero {
-  width: 100%;
-  height: 100vh;
   margin-top: 80px;
-  background: url("images/hero.jpg") center center no-repeat;
+  width: 100%;
+  height: 90vh;
+  background-image: url("images/hero.jpg");
   background-size: cover;
-
+  background-position: center;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -61,138 +59,50 @@ header nav a.btn {
 
 .hero-content {
   text-align: center;
-  max-width: 900px;
-  padding: 20px;
+  background: rgba(0,0,0,0.45);
+  padding: 40px;
+  border-radius: 10px;
 }
 
-/* ===================== LOGO HERO ===================== */
 .hero-logo {
-  width: 260px;
-  margin-bottom: 30px;
+  width: 220px;
+  margin-bottom: 20px;
 }
 
-/* ===================== TEXTE HERO ===================== */
 .hero h1 {
-  font-size: 3rem;
-  color: #ffffff;
+  color: white;
+  font-size: 2.5rem;
   margin-bottom: 15px;
-  text-shadow: 0 2px 6px rgba(0,0,0,0.6);
 }
 
 .hero p {
-  font-size: 1.2rem;
-  color: #ffffff;
-  margin-bottom: 25px;
-  text-shadow: 0 2px 6px rgba(0,0,0,0.6);
+  color: white;
+  margin-bottom: 20px;
 }
 
-.hero .btn {
+.hero a {
   background: #f2b705;
-  color: #000;
-  padding: 14px 26px;
+  color: black;
+  padding: 12px 20px;
+  border-radius: 5px;
   text-decoration: none;
-  border-radius: 6px;
   font-weight: bold;
 }
 
-/* ===================== SECTIONS ===================== */
+/* SECTIONS */
 section {
-  padding: 100px 15%;
-  background: #ffffff;
+  padding: 80px 15%;
 }
 
-section h1,
 section h2 {
   text-align: center;
-  font-size: 2.2rem;
   margin-bottom: 30px;
 }
 
-section p {
-  max-width: 900px;
-  margin: auto;
-  text-align: center;
-  font-size: 1.05rem;
-}
-
-/* ===================== CARDS ===================== */
-.card {
-  background: #f8f8f8;
-  padding: 30px;
-  border-radius: 10px;
-  margin-bottom: 25px;
-}
-
-/* ===================== GALERIE ===================== */
-.galerie {
-  margin-top: 40px;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 20px;
-}
-
-.galerie img {
-  width: 100%;
-  border-radius: 10px;
-  display: block;
-}
-
-/* ===================== FORMULAIRE ===================== */
-form {
-  max-width: 600px;
-  margin: auto;
-  margin-top: 40px;
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-}
-
-form input,
-form textarea {
-  padding: 12px;
-  border-radius: 6px;
-  border: 1px solid #ccc;
-  font-size: 1rem;
-}
-
-form button {
-  background: #f2b705;
-  border: none;
-  padding: 14px;
-  font-weight: bold;
-  border-radius: 6px;
-  cursor: pointer;
-}
-
-/* ===================== FOOTER ===================== */
+/* FOOTER */
 footer {
   background: #111;
-  color: #ffffff;
+  color: white;
   text-align: center;
-  padding: 25px;
-  margin-top: 60px;
-}
-
-/* ===================== RESPONSIVE ===================== */
-@media (max-width: 768px) {
-
-  header {
-    padding: 0 20px;
-  }
-
-  header nav a {
-    margin-left: 15px;
-  }
-
-  .hero h1 {
-    font-size: 2.2rem;
-  }
-
-  .hero-logo {
-    width: 200px;
-  }
-
-  section {
-    padding: 80px 10%;
-  }
+  padding: 20px;
 }
