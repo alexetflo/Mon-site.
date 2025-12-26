@@ -11,6 +11,7 @@ body {
     color: #333;
 }
 
+/* HERO */
 .header {
     height: 100vh;
     background: url("assets/images/hero.jpg") center/cover no-repeat;
@@ -26,7 +27,6 @@ body {
 
 .header-content {
     position: relative;
-    z-index: 1;
     text-align: center;
     top: 50%;
     transform: translateY(-50%);
@@ -39,48 +39,65 @@ body {
 
 .btn {
     display: inline-block;
-    margin-top: 20px;
-    padding: 12px 30px;
+    margin-top: 25px;
+    padding: 12px 35px;
     background: var(--gold);
     color: black;
     text-decoration: none;
     font-weight: bold;
     border-radius: 30px;
+    transition: 0.3s ease;
 }
 
+.btn:hover {
+    background: white;
+}
+
+/* SECTIONS */
 section {
     padding: 60px 20px;
+    max-width: 900px;
+    margin: auto;
     text-align: center;
 }
 
-.services {
-    background: #fff;
+.services ul {
+    list-style: none;
+    padding: 0;
 }
 
-.cards {
+.services li {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+/* FORMULAIRE */
+form {
+    max-width: 600px;
+    margin: auto;
     display: flex;
-    gap: 20px;
-    justify-content: center;
-    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 15px;
 }
 
-.card {
-    background: var(--dark);
-    color: white;
-    padding: 25px;
-    width: 280px;
-    border-radius: 10px;
+input, textarea, select {
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 16px;
 }
 
-.card h3 {
-    color: var(--gold);
+textarea {
+    min-height: 120px;
 }
 
+/* CONTACT */
 .contact {
     background: var(--dark);
     color: white;
 }
 
+/* FOOTER */
 footer {
     background: black;
     color: white;
